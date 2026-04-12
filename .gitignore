@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# uv / venv (lockfile is committed for reproducibility)
+mcp/.venv/
+
+# Environment
+mcp/.env
+.env
+
+# Database (generated, machine-specific)
+mcp/brain.duckdb
+mcp/*.duckdb
+mcp/*.db
+
+# macOS
+.DS_Store
+
+# Memory notes — ignore all, keep only the template README
+memory/*.md
+memory/**/*.md
+!memory/README.md
+
+# Generated entity hub notes
+memory/entities/
+
+# Obsidian — local config, not portable
+memory/.obsidian/
+
+# IDE / AI assistant personal config
+CLAUDE.md
+.windsurfrules

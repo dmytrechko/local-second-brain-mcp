@@ -1,0 +1,22 @@
+[project]
+name = "second-brain-mcp"
+version = "0.1.0"
+description = "Local MCP second brain — markdown + duckdb + semantic search"
+requires-python = ">=3.12.1"
+dependencies = [
+    "fastmcp>=2.0.0",
+    "duckdb>=1.2.0",
+    "numpy>=1.26.0",
+    "python-frontmatter>=1.1.0",
+    "sentence-transformers>=3.0.0",
+    "gliner>=0.2.0",
+]
+
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
