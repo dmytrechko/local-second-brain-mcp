@@ -213,7 +213,7 @@ def search_by_vector(
 
     scored = []
     for row in rows:
-        emb = np.array(row[7], dtype=np.float32)
+        emb = np.array(row[6], dtype=np.float32)
         emb /= np.linalg.norm(emb) + 1e-10
         score = float(np.dot(q, emb))
         scored.append((score, row))
